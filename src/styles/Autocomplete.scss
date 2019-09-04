@@ -1,0 +1,57 @@
+$search-input-width: 325px;
+
+.autocomplete-field {
+    display: flex;
+    flex-direction: column;
+
+    .search-input {
+        color: #767875;
+        font-size: 16px;
+        height: 35px;
+        width: $search-input-width;
+        padding: 5px;
+    }
+
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        transform: rotateY(180deg);
+        position: relative;
+        left: 310px;
+        bottom: 35px;
+    }
+
+    .suggestions-block {
+        background-color: white;
+        width: $search-input-width;
+        position: relative;
+        bottom: 20px;
+        border-bottom: 2px solid #eeeeee;
+        border-left: 2px solid #eeeeee;
+        border-right: 2px solid #eeeeee;
+
+        .suggestions-list {
+            list-style-type: none;
+            text-align: left;
+            padding: 0;
+
+            .suggestion {
+                margin-bottom: 5px;
+
+                .school-name {
+                    font-size: 16px;
+                }
+
+                .school-location {
+                    margin-top: -20px;
+                    font-size: 12px;
+                }
+            }
+
+            .suggestion:hover {
+                background-color: #eeeeee;
+                cursor: pointer;
+            }
+        }
+    }
+}

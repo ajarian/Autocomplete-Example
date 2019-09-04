@@ -23,7 +23,9 @@ $search-input-width: 325px;
 
     .suggestions-block {
         background-color: white;
-        width: $search-input-width;
+        width: 335px;
+        max-height: 350px;
+        overflow: overlay;
         position: relative;
         bottom: 20px;
         border-bottom: 2px solid #eeeeee;
@@ -37,6 +39,8 @@ $search-input-width: 325px;
 
             .suggestion {
                 margin-bottom: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
 
                 .school-name {
                     font-size: 16px;
@@ -46,6 +50,10 @@ $search-input-width: 325px;
                     margin-top: -20px;
                     font-size: 12px;
                 }
+            }
+
+            .target-suggestion {
+                background-color: #eeeeee;
             }
 
             .suggestion:hover {

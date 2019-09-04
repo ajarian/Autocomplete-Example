@@ -33,6 +33,7 @@ export var JSONPUtil = {
     }
 };
 
+// Method wasn't accessible by the JSONP callback unless added to the window
 window.DispatchJsonpResponse = function(oResponse, sEcho) {
     // sEcho contains the request id
 

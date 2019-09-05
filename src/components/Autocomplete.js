@@ -96,8 +96,8 @@ export default class Autocomplete extends React.Component {
                 // Multiplying the current target by height provides y value of element
                 const suggestionPosition = liHeight * targetSuggestion;
 
-                // If element is positioned above or below the view the top of the block
-                // should be set to the position of that element
+                // If element is positioned above the block or below its bottom
+                // the top of the block should be set to the position of that element
                 if (suggestionPosition < suggestionsBlock.scrollTop || (suggestionPosition + (liHeight*2)) > blockEnd) {
                     suggestionsBlock.scrollTop = suggestionPosition;
                 }

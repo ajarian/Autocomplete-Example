@@ -57,8 +57,7 @@
             }
 
             .suggestion:hover {
-                background-color: #eeeeee;
-                cursor: pointer;
+                cursor: default;
             }
         }
     }
@@ -78,10 +77,6 @@
         border-right-color: #8F95D3;
 
         .target-suggestion {
-            background-color: #84ACCE !important;
-        }
-
-        .suggestion:hover {
             background-color: #84ACCE !important;
         }
     }
